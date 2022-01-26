@@ -8,7 +8,7 @@ function App() {
   // const [books, setBooks] = useState([])
   
   useEffect( () => {
-        fetch('http://localhost:3000/authors')
+        fetch('/authors')
         .then(r => r.json())
         .then( (fetchedGames) => {
         setAuthors(fetchedGames) })
