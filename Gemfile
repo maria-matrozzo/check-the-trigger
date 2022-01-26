@@ -28,3 +28,8 @@ group :development do
   # gem "spring"
 end
 
+gem 'awesome_print'
+gem "table_print"
+
+gem "active_model_serializers", "~> 0.10.12"
+
