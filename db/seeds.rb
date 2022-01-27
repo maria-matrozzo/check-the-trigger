@@ -2,6 +2,10 @@ puts "destroying all seeds..."
 
 Author.destroy_all
 Book.destroy_all 
+User.destroy_all
+
+puts "seeding user..."
+bahduhbee = User.create(username: "bahduhbee")
 
 puts "seeding authors..."
 

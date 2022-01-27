@@ -1,27 +1,42 @@
 import './App.css';
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import React, {useEffect, useState} from 'react';
+import NavBar from './NavBar';
+import BookCard from './BookCard';
 
 function App() {
 
-  
-  const [authors, setAuthors] = useState([])
-  // const [books, setBooks] = useState([])
+  const [books, setBooks] = useState([])
   
   useEffect( () => {
-        fetch('/authors')
+        // fetch('/authors')
+        // .then(r => r.json())
+        // .then( (fetchedAuthors) => {
+        // setAuthors(fetchedAuthors) })
+
+        fetch('/books')
         .then(r => r.json())
-        .then( (fetchedGames) => {
-        setAuthors(fetchedGames) })
+        .then( (fetchedBooks) => {
+        setBooks(fetchedBooks) }) 
       }, [] )
 
-      // checking the the fetches worked :)
-    console.log("authors:   ", authors)
-    // console.log("Books:   ", books)
-
-
   return (
-    <div className="App">
-     
+    <div>
+      <NavBar />
+        <Switch>
+          <Route path="/books">
+            {books.map((eachBook) => {
+            return (
+              <BookCard 
+              bookInfo = {eachBook}
+              key = {eachBook.id} />
+              // author = {authors} 
+            )
+          })}
+          </Route>
+        </Switch>
     </div>
   );
 }
