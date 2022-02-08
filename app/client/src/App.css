@@ -1,5 +1,5 @@
 body {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -7,12 +7,14 @@ body {
   min-height: 100vh;
   padding-bottom: 75px;
   margin-top: 80px;
-  background-color: #af5656;
+  background-color: #9fafca;
 }
 
 .container {
   background-color: white;
   position: relative;
+  display: flex;
+  flex-direction: column;
   margin-left: 100px;
   margin-right: 100px;
   padding: 10px 100px 0px 100px;
@@ -28,12 +30,24 @@ img {
 }
 
 .search {
-  width: 50%;
   text-align: center;
   position: relative;
   display: block;
   margin: auto;
   padding: 2rem;
+}
+
+.search_bar {
+  background-color: #9FAFCA;
+  border-radius: 50px;
+  text-align: left;
+  position: relative;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 400px;
+  height: 15px;
+
 }
 
 .nav {
@@ -56,7 +70,7 @@ li {
   margin-left: 50 px;
   margin-right: 50px;
   text-decoration: none;
-  color: #af5656;
+  color: #0E387A;
   font-size: 18px;
   font-weight: 400;
   transition: all 0.5s ease-in-out;
@@ -98,7 +112,8 @@ Link, Link:hover, Link:visited, Link:active {
 }
 
 .card_text {
-  padding: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 2.5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -109,7 +124,7 @@ Link, Link:hover, Link:visited, Link:active {
   height: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  background-color: #9b6262;
+  background-color: #0e387a;
   transition: width 0.2s ease;
 }
 
@@ -118,12 +133,13 @@ Link, Link:hover, Link:visited, Link:active {
   text-overflow: ellipsis;
   text-align: justify;
   height: 100%;
+  line-height: 1.4;
 }
 
 .tag_box {
   display: flex;
   flex-flow: row wrap;
-  font-size: 20px;
+  font-size: 18px;
   margin: 20px 0 0 0;
   padding: 0;
   justify-content: center;
@@ -131,13 +147,13 @@ Link, Link:hover, Link:visited, Link:active {
 
 .tag {
   display: inline-block;
-      background: rgb(221, 219, 219);
-      border-radius: 3px;
-      padding: 2.5px 15px;
-      margin: 0 5px 5px 0;
-      cursor: default;
-      user-select: none;
-      transition: background-color 0.3s;
+  background: #9FAFCA;
+  border-radius: 3px;
+  padding: 2.5px 15px;
+  margin: 0 5px 5px 0;
+  cursor: default;
+  user-select: none;
+  transition: background-color 0.3s;
 }
 
 h1 {
@@ -147,10 +163,6 @@ h1 {
   font-size: 38px;
 }
 
-p {
-  font-size: 13px;
-}
-
 .columns {
   float: left;
   justify-content: center;
@@ -158,6 +170,7 @@ p {
   column-count: 4;
   column-gap: 40px;
   column-rule-width: 1px;
+  padding-bottom: 15px;
 }
 
 

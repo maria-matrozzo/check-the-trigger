@@ -7,7 +7,8 @@ function SearchBar({searchProp}) {
     return (
     <div className="search">
         <h4>Search By Title or Author</h4>
-        <input 
+        <input
+        className="search_bar"
         type = "text"
         placeholder="Search..."
         value={searchValue}

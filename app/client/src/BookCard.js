@@ -1,10 +1,477 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function BookCard({bookInfo}) {
 
-    // console.log("author:   ", bookInfo.author)
-    console.log("content warnings:   ", bookInfo.content_warnings)
+    const [showAbandoment, setAbandoment] = useState(false)
+    function revealAbandonment() {
+        setAbandoment(true)
+    }
 
+    const [showAbleism, setAbleism] = useState(false)
+    function revealAbleism() {
+        setAbleism(true)
+    }
+
+    const [showAbortion, setAbortion] = useState(false)
+    function revealAbortion() {
+        setAbortion(true)
+    }
+
+    const [showAcephobia, setAcephobia] = useState(false)
+    function revealAcephobia() {
+        setAcephobia(true)
+    }
+
+    const [showAddiction, setAddiction] = useState(false)
+    function revealAddiction() {
+        setAddiction(true)
+    }
+
+    const [showAdultMinorRelationship, setAdultMinorRelationship] = useState(false)
+    function revealAdultMinorRelationship() {
+        setAdultMinorRelationship(true)
+    }
+
+    const [showAlcohol, setAlcohol] = useState(false)
+    function revealAlcohol() {
+        setAlcohol(true)
+    }
+
+    const [showAlcohosim, setAlcohosim] = useState(false)
+    function revealAlcohosim() {
+        setAlcohosim(true)
+    }
+
+    const [showAnimalCruelty, setAnimalCruelty] = useState(false)
+    function revealAnimalCruelty() {
+        setAnimalCruelty(true)
+    }
+
+    const [showAnimalDeath, setAnimalDeath] = useState(false)
+    function revealAnimalDeath() {
+        setAnimalDeath(true)
+    }
+
+    const [showAntisemitism, setAntisemitism] = useState(false)
+    function revealAntisemitism() {
+        setAntisemitism(true)
+    }
+
+    const [showBiphobia, setBiphobia] = useState(false)
+    function revealBiphobia() {
+        setBiphobia(true)
+    }
+
+    const [showBlood, setBlood] = useState(false)
+    function revealBlood() {
+        setBlood(true)
+    }
+
+    const [showBodyHorror, setBodyHorror] = useState(false)
+    function revealBodyHorror() {
+        setBodyHorror(true)
+    }
+
+    const [showBodyShaming, setBodyShaming] = useState(false)
+    function revealBodyShaming() {
+        setBodyShaming(true)
+    }
+
+    const [showBullying, setBullying] = useState(false)
+    function revealBullying() {
+        setBullying(true)
+    }
+
+    const [showCancer, setCancer] = useState(false)
+    function revealCancer() {
+        setCancer(true)
+    }
+
+    const [showCannibalism, setCannibalism] = useState(false)
+    function revealCannibalism() {
+        setCannibalism(true)
+    }
+
+    const [showCarAccident, setCarAccident] = useState(false)
+    function revealCarAccident() {
+        setCarAccident(true)
+    }
+
+    const [showChildAbuse, setChildAbuse] = useState(false)
+    function revealChildAbuse() {
+        setChildAbuse(true)
+    }
+
+    const [showChildDeath, setChildDeath] = useState(false)
+    function revealChildDeath() {
+        setChildDeath(true)
+    }
+
+    const [showChronicIllness, setChronicIllness] = useState(false)
+    function revealChronicIllness() {
+        setChronicIllness(true)
+    }
+    
+    const [showClassism, setClassism] = useState(false)
+    function revealClassism() {
+        setClassism(true)
+    }
+    
+    const [showColonization, setColonization] = useState(false)
+    function revealColonization() {
+        setColonization(true)
+    }
+    
+    const [showConfinement, setConfinement] = useState(false)
+    function revealConfinement() {
+        setConfinement(true)
+    }
+    
+    const [showCulturalAppropriation, setCulturalAppropriation] = useState(false)
+    function revealCulturalAppropriation() {
+        setCulturalAppropriation(true)
+    }
+    
+    const [showCursing, setCursing] = useState(false)
+    function revealCursing() {
+        setCursing(true)
+    }
+    
+    const [showDeadnaming, setDeadnaming] = useState(false)
+    function revealDeadnaming() {
+        setDeadnaming(true)
+    }
+    
+    const [showDeath, setDeath] = useState(false)
+    function revealDeath() {
+        setDeath(true)
+    }
+    
+    const [showDeathOfAParent, setDeathOfAParent] = useState(false)
+    function revealDeathOfAParent() {
+        setDeathOfAParent(true)
+    }
+    
+    const [showDementia, setDementia] = useState(false)
+    function revealDementia() {
+        setDementia(true)
+    }
+    
+    const [showDomesticAbuse, setDomesticAbuse] = useState(false)
+    function revealDomesticAbuse() {
+        setDomesticAbuse(true)
+    }
+    
+    const [showDrugAbuse, setDrugAbuse] = useState(false)
+    function revealDrugAbuse() {
+        setDrugAbuse(true)
+    }
+    
+    const [showDrugUse, setDrugUse] = useState(false)
+    function revealDrugUse() {
+        setDrugUse(true)
+    }
+    
+    const [showDysphoria, setDysphoria] = useState(false)
+    function revealDysphoria() {
+        setDysphoria(true)
+    }
+    
+    const [showEatingDisorder, setEatingDisorder] = useState(false)
+    function revealEatingDisorder() {
+        setEatingDisorder(true)
+    }
+    
+    const [showEmotionalAbuse, setEmotionalAbuse] = useState(false)
+    function revealEmotionalAbuse() {
+        setEmotionalAbuse(true)
+    }
+    
+    const [showExcrement, setExcrement] = useState(false)
+    function revealExcrement() {
+        setExcrement(true)
+    }
+    
+    const [showFatphobia, setFatphobia] = useState(false)
+    function revealFatphobia() {
+        setFatphobia(true)
+    }
+    
+    const [showFire, setFire] = useState(false)
+    function revealFire() {
+        setFire(true)
+    }
+    
+    const [showForcedInstitutionalization, setForcedInstitutionalization] = useState(false)
+    function revealForcedInstitutionalization() {
+        setForcedInstitutionalization(true)
+    }
+    
+    const [showGaslighting, setGaslighting] = useState(false)
+    function revealGaslighting() {
+        setGaslighting(true)
+    }
+    
+    const [showGenocide, setGenocide] = useState(false)
+    function revealGenocide() {
+        setGenocide(true)
+    }
+    
+    const [showGore, setGore] = useState(false)
+    function revealGore() {
+        setGore(true)
+    }
+    
+    const [showGrief, setGrief] = useState(false)
+    function revealGrief() {
+        setGrief(true)
+    }
+    
+    const [showGunViolence, setGunViolence] = useState(false)
+    function revealGunViolence() {
+        setGunViolence(true)
+    }
+    
+    const [showHateCrime, setHateCrime] = useState(false)
+    function revealHateCrime() {
+        setHateCrime(true)
+    }
+    
+    const [showHomophobia, setHomophobia] = useState(false)
+    function revealHomophobia() {
+        setHomophobia(true)
+    }
+    
+    const [showIncest, setIncest] = useState(false)
+    function revealIncest() {
+        setIncest(true)
+    }
+    
+    const [showInfertility, setInfertility] = useState(false)
+    function revealInfertility() {
+        setInfertility(true)
+    }
+    
+    const [showInfidelity, setInfidelity] = useState(false)
+    function revealInfidelity() {
+        setInfidelity(true)
+    }
+    
+    const [showInjury, setInjury] = useState(false)
+    function revealInjury() {
+        setInjury(true)
+    }
+    
+    const [showIslamophobia, setIslamophobia] = useState(false)
+    function revealIslamophobia() {
+        setIslamophobia(true)
+    }
+    
+    const [showKidnapping, setKidnapping] = useState(false)
+    function revealKidnapping() {
+        setKidnapping(true)
+    }
+    
+    const [showLesbophobia, setLesbophobia] = useState(false)
+    function revealLesbophobia() {
+        setLesbophobia(true)
+    }
+    
+    const [showMassShooting, setMassShooting] = useState(false)
+    function revealMassShooting() {
+        setMassShooting(true)
+    }
+    
+    const [showMedicalContent, setMedicalContent] = useState(false)
+    function revealMedicalContent() {
+        setMedicalContent(true)
+    }
+
+    const [showMedicalTrauma, setMedicalTrauma] = useState(false)
+    function revealMedicalTrauma() {
+        setMedicalTrauma(true)
+    }
+    
+    const [showMentalIllness, setMentalIllness] = useState(false)
+    function revealMentalIllness() {
+        setMentalIllness(true)
+    }
+    
+    const [showMiscarriage, setMiscarriage] = useState(false)
+    function revealMiscarriage() {
+        setMiscarriage(true)
+    }
+
+    const [showMisogyny, setMisogyny] = useState(false)
+    function revealMisogyny() {
+        setMisogyny(true)
+    }
+    
+    const [showMurder, setMurder] = useState(false)
+    function revealMurder() {
+        setMurder(true)
+    }
+    
+    const [showOuting, setOuting] = useState(false)
+    function revealOuting() {
+        setOuting(true)
+    }
+    
+    const [showPanicAttack, setPanicAttack] = useState(false)
+    function revealPanicAttack() {
+        setPanicAttack(true)
+    }
+    
+    const [showPedophilia, setPedophilia] = useState(false)
+    function revealPedophilia() {
+        setPedophilia(true)
+    }
+    
+    const [showPhysicalAbuse, setPhysicalAbuse] = useState(false)
+    function revealPhysicalAbuse() {
+        setPhysicalAbuse(true)
+    }
+    
+    const [showPoliceBrutality, setPoliceBrutality] = useState(false)
+    function revealPoliceBrutality() {
+        setPoliceBrutality(true)
+    }
+    
+    const [showPregnancy, setPregnancy] = useState(false)
+    function revealPregnancy() {
+        setPregnancy(true)
+    }
+    
+    const [showRacialSlur, setRacialSlur] = useState(false)
+    function revealRacialSlur() {
+        setRacialSlur(true)
+    }
+    
+    const [showRacism, setRacism] = useState(false)
+    function revealRacism() {
+        setRacism(true)
+    }
+    
+    const [showRape, setRape] = useState(false)
+    function revealRape() {
+        setRape(true)
+    }
+    
+    const [showReligiousBigotry, setReligiousBigotry] = useState(false)
+    function revealReligiousBigotry() {
+        setReligiousBigotry(true)
+    }
+    
+    const [showSchizophrenia, setSchizophrenia] = useState(false)
+    function revealSchizophrenia() {
+        setSchizophrenia(true)
+    }
+    
+    const [showSchoolShooting, setSchoolShooting] = useState(false)
+    function revealSchoolShooting() {
+        setSchoolShooting(true)
+    }
+    
+    const [showSelfHarm, setSelfHarm] = useState(false)
+    function revealSelfHarm() {
+        setSelfHarm(true)
+    }
+    
+    const [showSexism, setSexism] = useState(false)
+    function revealSexism() {
+        setSexism(true)
+    }
+    
+    const [showSexualAssault, setSexualAssault] = useState(false)
+    function revealSexualAssault() {
+        setSexualAssault(true)
+    }
+    
+    const [showSexualHarrassment, setSexualHarrassment] = useState(false)
+    function revealSexualHarrassment() {
+        setSexualHarrassment(true)
+    }
+    
+    const [showSexualViolence, setSexualViolence] = useState(false)
+    function revealSexualViolence() {
+        setSexualViolence(true)
+    }
+    
+    const [showSlavery, setSlavery] = useState(false)
+    function revealSlavery() {
+        setSlavery(true)
+    }
+    
+    const [showStalking, setStalking] = useState(false)
+    function revealStalking() {
+        setStalking(true)
+    }
+    
+    const [showSuicidalThoughts, setSuicidalThoughts] = useState(false)
+    function revealSuicidalThoughts() {
+        setSuicidalThoughts(true)
+    }
+    
+    const [showSuicide, setSuicide] = useState(false)
+    function revealSuicide() {
+        setSuicide(true)
+    }
+    
+    const [showSuicideAttempt, setSuicideAttempt] = useState(false)
+    function revealSuicideAttempt() {
+        setSuicideAttempt(true)
+    }
+    
+    const [showTerminalIllness, setTerminalIllness] = useState(false)
+    function revealTerminalIllness() {
+        setTerminalIllness(true)
+    }
+    
+    const [showTorture, setTorture] = useState(false)
+    function revealTorture() {
+        setTorture(true)
+    }
+    
+    const [showToxicFriendship, setToxicFriendship] = useState(false)
+    function revealToxicFriendship() {
+        setToxicFriendship(true)
+    }
+    
+    const [showToxicRelationship, setToxicRelationship] = useState(false)
+    function revealToxicRelationship() {
+        setToxicRelationship(true)
+    }
+    
+    const [showTrafficking, setTrafficking] = useState(false)
+    function revealTrafficking() {
+        setTrafficking(true)
+    }
+    
+    const [showTransphobia, setTransphobia] = useState(false)
+    function revealTransphobia() {
+        setTransphobia(true)
+    }
+    
+    const [showViolence, setViolence] = useState(false)
+    function revealViolence() {
+        setViolence(true)
+    }
+    
+    const [showVomit, setVomit] = useState(false)
+    function revealVomit() {
+        setVomit(true)
+    }
+    
+    const [showWar, setWar] = useState(false)
+    function revealWar() {
+        setWar(true)
+    }
+    
+    const [showXenophobia, setXenophobia] = useState(false)
+    function revealXenophobia() {
+        setXenophobia(true)
+    }
+    
     return(
         <article className="card">
             <img src={bookInfo.image} alt={bookInfo.title} />
@@ -34,100 +501,100 @@ function BookCard({bookInfo}) {
                 <h3>Check the Trigger</h3>
 
                 <div className="columns">
-                    <p> Abandonment: {bookInfo.content_warnings.abandonment}</p>
-                    <p> Ableism: {bookInfo.content_warnings.ableism} </p>
-                    <p> Abortion: {bookInfo.content_warnings.abortion} </p>
-                    <p> Acephobia: {bookInfo.content_warnings.acephobia} </p>
-                    <p>Addiction: {bookInfo.content_warnings.addiction}</p>
-                    <p>Adult/minor Relationship: {bookInfo.content_warnings.adult_minor_relationship}</p>
-                    <p>Alcohol: {bookInfo.content_warnings.alcohol}</p>
-                    <p>Alcoholism: {bookInfo.content_warnings.alcoholism}</p>
-                    <p>Animal Cruelty: {bookInfo.content_warnings.animal_cruelty}</p>
-                    <p>Animal Death: {bookInfo.content_warnings.animal_death}</p>
-                    <p>Antisemitism: {bookInfo.content_warnings.antisemitism}</p>
-                    <p>Biphobia: {bookInfo.content_warnings.biphobia}</p>
-                    <p>Blood: {bookInfo.content_warnings.blood}</p>
-                    <p>Body Horror:{bookInfo.content_warnings.blood_horror}</p>
-                    <p>Body Shaming: {bookInfo.content_warnings.body_shaming}</p>
-                    <p>Bullying: {bookInfo.content_warnings.bullying}</p>
-                    <p>Cancer: {bookInfo.content_warnings.cancer}</p>
-                    <p>Cannibalism: {bookInfo.content_warnings.cannibalism}</p>
-                    <p>Car Accident: {bookInfo.content_warnings.car_accident}</p>
-                    <p>Child Abuse: {bookInfo.content_warnings.child_abuse}</p>
-                    <p>Child Death: {bookInfo.content_warnings.child_death}</p>
-                    <p>Chronic Illness: {bookInfo.content_warnings.chronic_illness}</p>
-                    <p>Classism: {bookInfo.content_warnings.classism}</p>
-                    <p>Colonization: {bookInfo.content_warnings.colonization}</p>
-                    <p>Confinement: {bookInfo.content_warnings.confinement}</p>
-                    <p>Cultural Appropriation: {bookInfo.content_warnings.cultural_appropriation}</p>
-                    <p>Cursing: {bookInfo.content_warnings.cursing}</p>
-                    <p>Deadnaming: {bookInfo.content_warnings.deadnaming}</p>
-                    <p>Death: {bookInfo.content_warnings.death}</p>
-                    <p>Death of a Parent: {bookInfo.content_warnings.death_of_a_parent}</p>
-                    <p>Dementia: {bookInfo.content_warnings.dementia}</p>
-                    <p>Domestic Abuse:{bookInfo.content_warnings.domestic_abuse}</p>
-                    <p>Drug Abuse: {bookInfo.content_warnings.drug_abuse}</p>
-                    <p>Drug Use: {bookInfo.content_warnings.drug_use}</p>
-                    <p>Dysphoria: {bookInfo.content_warnings.dysphoria}</p>
-                    <p>Eating Disorder: {bookInfo.content_warnings.eating_disorder}</p>
-                    <p>Emotional Abuse: {bookInfo.content_warnings.emotional_abuse}</p>
-                    <p>Excrement: {bookInfo.content_warnings.excrement}</p>
-                    <p>Fatphobia: {bookInfo.content_warnings.fatphobia}</p>
-                    <p>Fire: {bookInfo.content_warnings.fire}</p>
-                    <p>Forced Institutionalization: {bookInfo.content_warnings.forced_institutionalization}</p>
-                    <p>Gaslighting: {bookInfo.content_warnings.gaslighting}</p>
-                    <p>Genocide: {bookInfo.content_warnings.genocide}</p>
-                    <p>Gore: {bookInfo.content_warnings.gore}</p>
-                    <p>Grief: {bookInfo.content_warnings.grief}</p>
-                    <p>Gun Violence: {bookInfo.content_warnings.gun_violence}</p>
-                    <p>Hate Crime: {bookInfo.content_warnings.hate_crime}</p>
-                    <p>Homophobia: {bookInfo.content_warnings.homophobia}</p>
-                    <p>Incest: {bookInfo.content_warnings.incest}</p>
-                    <p>Infertility: {bookInfo.content_warnings.infertility}</p>
-                    <p>Infidelity: {bookInfo.content_warnings.infidelity}</p>
-                    <p>Injury: {bookInfo.content_warnings.injury}</p>
-                    <p>Islamophobia: {bookInfo.content_warnings.islamophobia}</p>
-                    <p>Kidnapping: {bookInfo.content_warnings.kidnapping}</p>
-                    <p>Lesbophobia: {bookInfo.content_warnings.lesbophobia}</p>
-                    <p>Mass Shooting: {bookInfo.content_warnings.mass_shooting}</p>
-                    <p>Medical Content: {bookInfo.content_warnings.medical_content}</p>
-                    <p>Medical Trauma: {bookInfo.content_warnings.medical_trauma}</p>
-                    <p>Mental Illness: {bookInfo.content_warnings.mental_illness}</p>
-                    <p>Miscarriage: {bookInfo.content_warnings.miscarriage}</p>
-                    <p>Misogyny: {bookInfo.content_warnings.misogyny}</p>
-                    <p>Murder: {bookInfo.content_warnings.murder}</p>
-                    <p>Outing: {bookInfo.content_warnings.outing}</p>
-                    <p>Pannic Attack: {bookInfo.content_warnings.panic_attack}</p>
-                    <p>Pedophilia: {bookInfo.content_warnings.pedophilia}</p>
-                    <p>Physical Abuse: {bookInfo.content_warnings.physical_abuse}</p>
-                    <p>Police Brutality: {bookInfo.content_warnings.police_brutality}</p>
-                    <p>Pregnancy: {bookInfo.content_warnings.pregnancy}</p>
-                    <p>Racial Slur: {bookInfo.content_warnings.racial_slur}</p>
-                    <p>Racism: {bookInfo.content_warnings.racism}</p>
-                    <p>Rape: {bookInfo.content_warnings.rape}</p>
-                    <p>Religious Bigotry: {bookInfo.content_warnings.religious_bigotry}</p>
-                    <p>Schizophrenia: {bookInfo.content_warnings.schizophrenia}</p>
-                    <p>School Shooting: {bookInfo.content_warnings.school_shooting}</p>
-                    <p>Self Harm: {bookInfo.content_warnings.self_harm}</p>
-                    <p>Sexism: {bookInfo.content_warnings.sexism}</p>
-                    <p>Sexual Assault: {bookInfo.content_warnings.sexual_assault}</p>
-                    <p>Sexual Harrassment: {bookInfo.content_warnings.sexual_harrassment}</p>
-                    <p>Sexual Violence: {bookInfo.content_warnings.sexual_violence}</p>
-                    <p>Slavery: {bookInfo.content_warnings.slavery}</p>
-                    <p>Stalking: {bookInfo.content_warnings.stalking}</p>
-                    <p>Suicidal Thoughts: {bookInfo.content_warnings.suicidal_thoughts}</p>
-                    <p>Suicide: {bookInfo.content_warnings.suicide}</p>
-                    <p>Suicide Attempt: {bookInfo.content_warnings.suicide_attempt}</p>
-                    <p>Terminal Illness: {bookInfo.content_warnings.terminal_illness}</p>
-                    <p>Torture: {bookInfo.content_warnings.torture}</p>
-                    <p>Toxic Friendship: {bookInfo.content_warnings.toxic_friendship}</p>
-                    <p>Toxic Relationship: {bookInfo.content_warnings.toxic_relationship}</p>
-                    <p>Trafficking: {bookInfo.content_warnings.trafficking}</p>
-                    <p>Transphobia: {bookInfo.content_warnings.transphobia}</p>
-                    <p>Violence: {bookInfo.content_warnings.violence}</p>
-                    <p>Vomit: {bookInfo.content_warnings.vomit}</p>
-                    <p>War: {bookInfo.content_warnings.war}</p>
-                    <p>Xenophobia: {bookInfo.content_warnings.xenophobia}</p> 
+                    <p onClick={revealAbandonment}> {showAbandoment ? bookInfo.content_warnings.abandonment : "Abandonment: Click Here"} </p>
+                    <p onClick={revealAbleism}> {showAbleism ? bookInfo.content_warnings.ableism : "Ableism: Click Here"}  </p>
+                    <p onClick={revealAbortion}> {showAbortion ? bookInfo.content_warnings.abortion : "Abortion: Click Here"}  </p>
+                    <p onClick={revealAcephobia}> {showAcephobia ? bookInfo.content_warnings.acephobia : "Acephobia: Click Here"}  </p>
+                    <p onClick={revealAddiction}> {showAddiction ? bookInfo.content_warnings.addiction : "Addiction: Click Here"}  </p>
+                    <p onClick={revealAdultMinorRelationship}> {showAdultMinorRelationship ? bookInfo.content_warnings.adult_minor_relationship : "Adult/minor Relationship: Click Here"}  </p>
+                    <p onClick={revealAlcohol}> {showAlcohol ? bookInfo.content_warnings.alcohol : "Alcohol: Click Here"}  </p>
+                    <p onClick={revealAlcohosim}> {showAlcohosim ? bookInfo.content_warnings.alcoholism : "Alcoholism: Click Here"}  </p>
+                    <p onClick={revealAnimalCruelty}> {showAnimalCruelty ? bookInfo.content_warnings.animal_cruelty : "Animal Cruelty: Click Here"}  </p>
+                    <p onClick={revealAnimalDeath}> {showAnimalDeath ? bookInfo.content_warnings.animal_death : "Animal Death: Click Here"}  </p>
+                    <p onClick={revealAntisemitism}> {showAntisemitism ? bookInfo.content_warnings.antisemitism : "Antisemitism: Click Here"}  </p>
+                    <p onClick={revealBiphobia}> {showBiphobia ? bookInfo.content_warnings.biphobia : "Biphobia: Click Here"}  </p>
+                    <p onClick={revealBlood}> {showBlood ? bookInfo.content_warnings.blood : "Blood: Click Here"}  </p>
+                    <p onClick={revealBodyHorror}> {showBodyHorror ? bookInfo.content_warnings.body_horror : "Body Horror: Click Here"}  </p>
+                    <p onClick={revealBodyShaming}> {showBodyShaming ? bookInfo.content_warnings.body_shaming : "Body Shaming: Click Here"}  </p>
+                    <p onClick={revealBullying}> {showBullying ? bookInfo.content_warnings.bullying : "bullying: Click Here"}  </p>
+                    <p onClick={revealCancer}> {showCancer ? bookInfo.content_warnings.cancer : "Cancer: Click Here"}  </p>
+                    <p onClick={revealCannibalism}> {showCannibalism ? bookInfo.content_warnings.cannibalism : "Cannibalism: Click Here"}  </p>
+                    <p onClick={revealCarAccident}> {showCarAccident ? bookInfo.content_warnings.car_accident : "Car Accident: Click Here"}  </p>
+                    <p onClick={revealChildAbuse}> {showChildAbuse ? bookInfo.content_warnings.child_abuse : "Child Abuse: Click Here"}  </p>
+                    <p onClick={revealChildDeath}> {showChildDeath ? bookInfo.content_warnings.child_death : "Child Death: Click Here"}  </p>
+                    <p onClick={revealChronicIllness}> {showChronicIllness ? bookInfo.content_warnings.chronic_illness : "Chronic Illness: Click Here"}  </p>
+                    <p onClick={revealClassism}> {showClassism ? bookInfo.content_warnings.classism : "Classism: Click Here"}  </p>
+                    <p onClick={revealColonization}> {showColonization ? bookInfo.content_warnings.colonization : "Colonization: Click Here"}  </p>
+                    <p onClick={revealConfinement}> {showConfinement ? bookInfo.content_warnings.confinement : "Confinement: Click Here"}  </p>
+                    <p onClick={revealCulturalAppropriation}> {showCulturalAppropriation ? bookInfo.content_warnings.cultural_appropriation : "Cultural Appropriation: Click Here"}  </p>
+                    <p onClick={revealCursing}> {showCursing ? bookInfo.content_warnings.cursing : "Cursing: Click Here"}  </p>
+                    <p onClick={revealDeadnaming}> {showDeadnaming ? bookInfo.content_warnings.deadnaming : "Deadnaming: Click Here"}  </p>
+                    <p onClick={revealDeath}> {showDeath ? bookInfo.content_warnings.death : "Death: Click Here"}  </p>
+                    <p onClick={revealDeathOfAParent}> {showDeathOfAParent ? bookInfo.content_warnings.death_of_a_parent : "Death of a Parent: Click Here"}  </p>
+                    <p onClick={revealDementia}> {showDementia ? bookInfo.content_warnings.dementia : "Dementia: Click Here"}  </p>
+                    <p onClick={revealDomesticAbuse}> {showDomesticAbuse ? bookInfo.content_warnings.domestic_abuse : "Domestic Violence: Click Here"}  </p>
+                    <p onClick={revealDrugAbuse}> {showDrugAbuse ? bookInfo.content_warnings.drug_abuse : "Drug Abuse: Click Here"}  </p>
+                    <p onClick={revealDrugUse}> {showDrugUse ? bookInfo.content_warnings.drug_use : "Drug Use: Click Here"}  </p>
+                    <p onClick={revealDysphoria}> {showDysphoria ? bookInfo.content_warnings.dysphoria : "Dysphoria: Click Here"}  </p>
+                    <p onClick={revealEatingDisorder}> {showEatingDisorder ? bookInfo.content_warnings.eating_disorder : "Eating Disorder: Click Here"}  </p>
+                    <p onClick={revealEmotionalAbuse}> {showEmotionalAbuse ? bookInfo.content_warnings.emotional_abuse : "Emotional Abuse: Click Here"}  </p>
+                    <p onClick={revealExcrement}> {showExcrement ? bookInfo.content_warnings.excrement : "Excrement: Click Here"}  </p>
+                    <p onClick={revealFatphobia}> {showFatphobia ? bookInfo.content_warnings.fatphobia : "Fatphobia: Click Here"}  </p>
+                    <p onClick={revealFire}> {showFire ? bookInfo.content_warnings.fire : "Fire: Click Here"}  </p>
+                    <p onClick={revealForcedInstitutionalization}> {showForcedInstitutionalization ? bookInfo.content_warnings.forced_institutionalization : "Forced Institutionalization: Click Here"}  </p>
+                    <p onClick={revealGaslighting}> {showGaslighting ? bookInfo.content_warnings.gaslighting : "Gaslighting: Click Here"}  </p>
+                    <p onClick={revealGenocide}> {showGenocide ? bookInfo.content_warnings.genocide : "Genocide: Click Here"}  </p>
+                    <p onClick={revealGore}> {showGore ? bookInfo.content_warnings.gore : "Gore: Click Here"}  </p>
+                    <p onClick={revealGrief}> {showGrief ? bookInfo.content_warnings.grief : "Grief: Click Here"}  </p>
+                    <p onClick={revealGunViolence}> {showGunViolence ? bookInfo.content_warnings.gun_violence : "Gun Violence: Click Here"}  </p>
+                    <p onClick={revealHateCrime}> {showHateCrime ? bookInfo.content_warnings.hate_crime : "Hate Crime: Click Here"}  </p>
+                    <p onClick={revealHomophobia}> {showHomophobia ? bookInfo.content_warnings.homophobia : "Homophobia: Click Here"}  </p>
+                    <p onClick={revealIncest}> {showIncest ? bookInfo.content_warnings.incest : "Incest: Click Here"}  </p>
+                    <p onClick={revealInfertility}> {showInfertility ? bookInfo.content_warnings.infertility : "Infertility: Click Here"}  </p>
+                    <p onClick={revealInfidelity}> {showInfidelity ? bookInfo.content_warnings.infidelity : "Infidelity: Click Here"}  </p>
+                    <p onClick={revealInjury}> {showInjury ? bookInfo.content_warnings.injury : "Injury Detail: Click Here"}  </p>
+                    <p onClick={revealIslamophobia}> {showIslamophobia ? bookInfo.content_warnings.islamophobia : "Islamophobia: Click Here"}  </p>
+                    <p onClick={revealKidnapping}> {showKidnapping ? bookInfo.content_warnings.kidnapping : "Kidnapping: Click Here"}  </p>
+                    <p onClick={revealLesbophobia}> {showLesbophobia ? bookInfo.content_warnings.lesbophobia : "Lesbophobia: Click Here"}  </p>
+                    <p onClick={revealMassShooting}> {showMassShooting ? bookInfo.content_warnings.mass_shooting : "Mass Shooting: Click Here"}  </p>
+                    <p onClick={revealMedicalContent}> {showMedicalContent ? bookInfo.content_warnings.medical_content : "Medical Content: Click Here"}  </p>
+                    <p onClick={revealMedicalTrauma}> {showMedicalTrauma ? bookInfo.content_warnings.medical_trauma : "Medical Trauma: Click Here"}  </p>
+                    <p onClick={revealMentalIllness}> {showMentalIllness ? bookInfo.content_warnings.mental_illness : "Mental Illness: Click Here"}  </p>
+                    <p onClick={revealMiscarriage}> {showMiscarriage ? bookInfo.content_warnings.miscarriage : "Miscarriage: Click Here"}  </p>
+                    <p onClick={revealMisogyny}> {showMisogyny ? bookInfo.content_warnings.misogyny : "Misogyny: Click Here"}  </p>
+                    <p onClick={revealMurder}> {showMurder ? bookInfo.content_warnings.murder : "Murder: Click Here"}  </p>
+                    <p onClick={revealOuting}> {showOuting ? bookInfo.content_warnings.outing : "Outing: Click Here"}  </p>
+                    <p onClick={revealPanicAttack}> {showPanicAttack ? bookInfo.content_warnings.panic_attack : "Panic Attack: Click Here"}  </p>
+                    <p onClick={revealPedophilia}> {showPedophilia ? bookInfo.content_warnings.pedophilia : "Pedophilia: Click Here"}  </p>
+                    <p onClick={revealPhysicalAbuse}> {showPhysicalAbuse ? bookInfo.content_warnings.physical_abuse : "Physical Abuse: Click Here"}  </p>
+                    <p onClick={revealPoliceBrutality}> {showPoliceBrutality ? bookInfo.content_warnings.police_brutality : "Police Brutality: Click Here"}  </p>
+                    <p onClick={revealPregnancy}> {showPregnancy ? bookInfo.content_warnings.pregnancy : "Pregnancy: Click Here"}  </p>
+                    <p onClick={revealRacialSlur}> {showRacialSlur ? bookInfo.content_warnings.racial_slur : "Racial Slur: Click Here"}  </p>
+                    <p onClick={revealRacism}> {showRacism ? bookInfo.content_warnings.racism : "Racism: Click Here"}  </p>
+                    <p onClick={revealRape}> {showRape ? bookInfo.content_warnings.rape : "Rape: Click Here"}  </p>
+                    <p onClick={revealReligiousBigotry}> {showReligiousBigotry ? bookInfo.content_warnings.religious_bigotry : "Religious Bigotry: Click Here"}  </p>
+                    <p onClick={revealSchizophrenia}> {showSchizophrenia ? bookInfo.content_warnings.schizophrenia : "Schizophrenia: Click Here"}  </p>
+                    <p onClick={revealSchoolShooting}> {showSchoolShooting ? bookInfo.content_warnings.school_shooting : "School Shooting: Click Here"}  </p>
+                    <p onClick={revealSelfHarm}> {showSelfHarm ? bookInfo.content_warnings.self_harm : "Self Harm: Click Here"}  </p>
+                    <p onClick={revealSexism}> {showSexism ? bookInfo.content_warnings.sexism : "Sexism: Click Here"}  </p>
+                    <p onClick={revealSexualAssault}> {showSexualAssault ? bookInfo.content_warnings.sexual_assault : "Sexual Assault: Click Here"}  </p>
+                    <p onClick={revealSexualHarrassment}> {showSexualHarrassment ? bookInfo.content_warnings.sexual_harrassment : "Sexual Harrassment: Click Here"}  </p>
+                    <p onClick={revealSexualViolence}> {showSexualViolence ? bookInfo.content_warnings.violence : "Violence: Click Here"}  </p>
+                    <p onClick={revealSlavery}> {showSlavery ? bookInfo.content_warnings.slavery : "Slavery: Click Here"}  </p>
+                    <p onClick={revealStalking}> {showStalking ? bookInfo.content_warnings.stalking : "Stalking: Click Here"}  </p>
+                    <p onClick={revealSuicidalThoughts}> {showSuicidalThoughts ? bookInfo.content_warnings.suicidal_thoughts : "Suicial Thoughts: Click Here"}  </p>
+                    <p onClick={revealSuicide}> {showSuicide ? bookInfo.content_warnings.suicide : "Suicide: Click Here"}  </p>
+                    <p onClick={revealSuicideAttempt}> {showSuicideAttempt ? bookInfo.content_warnings.suicide_attempt : "Suicide Attempt: Click Here"}  </p>
+                    <p onClick={revealTerminalIllness}> {showTerminalIllness ? bookInfo.content_warnings.terminal_illness : "Terminal Illness: Click Here"}  </p>
+                    <p onClick={revealTorture}> {showTorture ? bookInfo.content_warnings.torture : "Torture: Click Here"}  </p>
+                    <p onClick={revealToxicFriendship}> {showToxicFriendship ? bookInfo.content_warnings.toxic_friendship : "Toxic Friendhsip: Click Here"}  </p>
+                    <p onClick={revealToxicRelationship}> {showToxicRelationship ? bookInfo.content_warnings.toxic_relationship : "Toxic Relationship: Click Here"}  </p>
+                    <p onClick={revealTrafficking}> {showTrafficking ? bookInfo.content_warnings.trafficking : "Trafficking: Click Here"}  </p>
+                    <p onClick={revealTransphobia}> {showTransphobia ? bookInfo.content_warnings.transphobia : "Transphobia: Click Here"}  </p>
+                    <p onClick={revealViolence}> {showViolence ? bookInfo.content_warnings.violence : "Violence: Click Here"}  </p>
+                    <p onClick={revealVomit}> {showVomit ? bookInfo.content_warnings.vomit : "Vomit: Click Here"}  </p>
+                    <p onClick={revealWar}> {showWar ? bookInfo.content_warnings.war : "War: Click Here"}  </p>
+                    <p onClick={revealXenophobia}> {showXenophobia ? bookInfo.content_warnings.xenophobia : "Xenophobia: Click Here"}  </p>
             </div>
 
             </div>
