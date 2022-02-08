@@ -1,42 +1,82 @@
 import './App.css';
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
 import {Route, Switch} from "react-router-dom";
 import React, {useEffect, useState} from 'react';
 import NavBar from './NavBar';
 import BookCard from './BookCard';
+import SearchBar from './SearchBar';
+import Footer from './Footer';
+import About from './About';
+import CreatePost from './CreatePost';
 
 function App() {
 
-  const [books, setBooks] = useState([])
+  const [allBooks, setAllBooks] = useState([])
+  const [searchedBooks, setSearchedBooks] = useState([])
   
   useEffect( () => {
-        // fetch('/authors')
-        // .then(r => r.json())
-        // .then( (fetchedAuthors) => {
-        // setAuthors(fetchedAuthors) })
-
         fetch('/books')
         .then(r => r.json())
         .then( (fetchedBooks) => {
-        setBooks(fetchedBooks) }) 
+        setAllBooks(fetchedBooks) 
+        setSearchedBooks(fetchedBooks) }) 
       }, [] )
 
+  // search bar
+  function searchFunction(text) {
+
+    let searchResults = allBooks.filter((book) => {
+      return ( (book.title).includes(text.charAt(0).toUpperCase() + text.slice(1)) ) 
+    })
+    
+    setSearchedBooks([...searchResults])
+
+  }
+
+  // submit book
+  const postBook = (newBook) => {
+    fetch('/books',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body: JSON.stringify(newBook)
+    })
+    .then(res => res.json())
+    .then(newEntry => {
+      setAllBooks([newEntry,...allBooks])
+    })
+  }
+
   return (
-    <div>
+    <div className="container" >
       <NavBar />
+
         <Switch>
-          <Route path="/books">
-            {books.map((eachBook) => {
-            return (
-              <BookCard 
-              bookInfo = {eachBook}
-              key = {eachBook.id} />
-              // author = {authors} 
-            )
-          })}
+        <Route path="/books"> 
+
+          <SearchBar 
+          searchProp = {searchFunction} />
+              
+          {searchedBooks.map((eachBook) => {
+          return (
+            <BookCard 
+            bookInfo = {eachBook}
+            key = {eachBook.id} />
+          )})}
+        </Route>
+
+          <Route path="/submit">
+            <CreatePost 
+            postBook = {postBook}
+            key = {postBook.id} />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
+
+      <Footer />
+
     </div>
   );
 }

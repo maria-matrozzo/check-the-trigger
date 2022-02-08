@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-
+  resources :content_warnings
+  
   resources :authors
   resources :books
-  resources :users
 
-  # get '/me', to: "users#show"
-  # post '/login'
-  # delete '/logout', to: "sessions#logout"
 
 end

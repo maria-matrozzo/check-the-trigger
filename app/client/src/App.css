@@ -1,38 +1,242 @@
-.App {
+body {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 75px;
+  margin-top: 80px;
+  background-color: #af5656;
+}
+
+.container {
+  background-color: white;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 10px 100px 0px 100px;
+}
+
+img {
+  max-height: relative;
+  width: full;
+  object-fit: cover;
+  position: static;
+  float: left;
+  padding: 0 15px 0 0;
+}
+
+.search {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: auto;
+  padding: 2rem;
+}
+
+.nav {
+  background-color: #cfcfcf;
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+}
+
+.menuItems {
+  list-style: none;
+  display: flex;
+  color: #af5656;
+  text-transform: uppercase;
+}
+
+li {
+  margin-left: 50 px;
+  margin-right: 50px;
+  text-decoration: none;
+  color: #af5656;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+Link, Link:hover, Link:visited, Link:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+#footer {
+  position: center;
+  font-size: 12px;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  bottom: 0;
+  position: fixed;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  color: #000000;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+    flex-wrap: wrap;
+    display: inline-block;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card_text {
+  padding: 1.5rem;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.card_bar {
+  width: 100px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #9b6262;
+  transition: width 0.2s ease;
+}
+
+.card_p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  height: 100%;
+}
+
+.tag_box {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 20px;
+  margin: 20px 0 0 0;
+  padding: 0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tag {
+  display: inline-block;
+      background: rgb(221, 219, 219);
+      border-radius: 3px;
+      padding: 2.5px 15px;
+      margin: 0 5px 5px 0;
+      cursor: default;
+      user-select: none;
+      transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  /* line-height: 1.2; */
+  font-size: 38px;
+}
+
+p {
+  font-size: 13px;
+}
+
+.columns {
+  float: left;
+  justify-content: center;
+  /* display: flex; */
+  column-count: 4;
+  column-gap: 40px;
+  column-rule-width: 1px;
+}
+
+
+/* form css --- will change */
+
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+.form-style-6 h1{
+	background: #004AAD;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+	box-shadow: 0 0 5px #004AAD;
+	padding: 3%;
+	border: 1px solid #004AAD;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #004AAD;
+	border-bottom: 2px solid #004AAD;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+	background: #004AAD;
 }
