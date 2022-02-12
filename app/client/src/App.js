@@ -5,14 +5,14 @@ import NavBar from './NavBar';
 import BookCard from './BookCard';
 import SearchBar from './SearchBar';
 import Footer from './Footer';
-import About from './About';
-import CreatePost from './CreatePost';
+import SuggestBook from './SuggestBook';
+import Home from './Home';
 
 function App() {
 
   const [allBooks, setAllBooks] = useState([])
   const [searchedBooks, setSearchedBooks] = useState([])
-  
+
   useEffect( () => {
         fetch('/books')
         .then(r => r.json())
@@ -24,59 +24,45 @@ function App() {
   // search bar
   function searchFunction(text) {
 
-    let searchResults = allBooks.filter((book) => {
+    let bookResults = allBooks.filter((book) => {
       return ( (book.title).includes(text.charAt(0).toUpperCase() + text.slice(1)) ) 
     })
     
-    setSearchedBooks([...searchResults])
+    setSearchedBooks([...bookResults])
 
-  }
-
-  // submit book
-  const postBook = (newBook) => {
-    fetch('/books',{
-      method:'POST',
-      headers:{
-        'Content-Type':'application/json'
-      },
-      body: JSON.stringify(newBook)
-    })
-    .then(res => res.json())
-    .then(newEntry => {
-      setAllBooks([newEntry,...allBooks])
-    })
   }
 
   return (
-    <div className="container" >
+    <div>
       <NavBar />
+      
+      <div>
 
         <Switch>
-        <Route path="/books"> 
+          <Route path="/books"> 
 
-          <SearchBar 
-          searchProp = {searchFunction} />
-              
-          {searchedBooks.map((eachBook) => {
-          return (
-            <BookCard 
-            bookInfo = {eachBook}
-            key = {eachBook.id} />
-          )})}
-        </Route>
+            <SearchBar 
+            searchFunction = {searchFunction} />
+               
+            {searchedBooks.map((eachBook) => {
+            return (
+              <BookCard 
+              bookInfo = {eachBook}
+              key = {eachBook.id} />
+            )})}
+          </Route>
 
-          <Route path="/submit">
-            <CreatePost 
-            postBook = {postBook}
-            key = {postBook.id} />
+          <Route path="/suggestbook">
+            <SuggestBook />
           </Route>
-          <Route path="/about">
-            <About />
+
+          <Route path="/">
+              <Home />
           </Route>
+
         </Switch>
-
+      </div>
       <Footer />
-
     </div>
   );
 }

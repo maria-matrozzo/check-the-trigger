@@ -1,54 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 100vh;
   padding-bottom: 75px;
-  margin-top: 80px;
-  background-color: #9fafca;
+  background-color: #EFCEAD;
 }
 
 h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
-  font-size: 38px;
+  font-size: 34px;
+  color: #1f1715;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+h3 {
+  color: #1f1715;
+  font-family: 'Playfair Display', serif;
+}
+
+.banner {
+  max-width: 100%;
+  max-height: 80%;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.logo {
+  margin: auto;
+  padding: auto;
+
 }
 
 .container {
   background-color: white;
+  align-items: center;
   position: relative;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  width: full;
-  min-height: 100vh;
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 70%;
+  margin: auto;
   padding: 10px 100px 0px 100px;
 }
 
-img {
-  max-height: relative;
-  width: full;
-  object-fit: cover;
-  position: static;
-  float: left;
-  padding: 0 15px 0 0;
-}
-
 /* search bar css */
-
 .search {
   text-align: center;
   position: relative;
   display: block;
-  margin: auto;
-  padding: 2rem;
+  margin-top: 30px;
+  padding-bottom: 2rem;
 }
 
 .search_bar {
-  background-color: #afc0dd;
+  background-color: #ececec;
   border-radius: 50px;
   text-align: left;
   position: relative;
@@ -61,71 +76,82 @@ img {
 
 /* nav bar css */
 .nav {
-  background-color: #0a2653;
+  background-color: #DD7000;
   display: flex;
   padding: 10px;
   width: 100%;
+  height: 30px;
   overflow: hidden;
   top: 0;
   position: fixed;
+  align-items: center;
+  z-index: 1;
 }
 
 .menuItems {
   list-style: none;
   display: flex;
-  color: #f5f5f5f5;
+  color: #EFCEAD;
   text-transform: uppercase;
 }
 
 .nav_tabs {
   margin-left: 50px;
   margin-right: 20px;
+  padding-top: 10px;
   text-decoration: none;
-  color: #9FAFCA;
+  color: #EFCEAD;
   font-size: 18px;
   font-weight: 400;
   transition: all 0.5s ease-in-out;
   position: relative;
   text-transform: uppercase;
-  text-decoration: none;
-  color:inheret;
+  font-family: 'Playfair Display', serif;
 }
 
 .link {
   text-decoration: none;
-  color: #f5f5f5f5;
+  color: #EFCEAD;
 }
 
 .link:hover {
-  color: #9FAFCA;
+  color: #523129;
+}
+
+a {
+  text-decoration: underline;
+  color: #EFCEAD;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #523129;
+
 }
 
 /* footer css */
-
 #footer {
   position: center;
   font-size: 12px;
-  bottom: 0;
   width: 100%;
   overflow: hidden;
+  padding-bottom: 4px;
   bottom: 0;
-  position: fixed;
-  height: 40px;
-  line-height: 40px;
-  font-size: 14px;
-  background-color: #f1f1f1;
-  color: #000000;
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  background-color: #DD7000;
+  color: #EFCEAD;
   text-align: center;
 }
 
 /* card components */
-
 .card {
     flex-wrap: wrap;
     display: inline-block;
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
     border-radius: 20px;
-    margin: 0 0 2rem 0;
+    margin-bottom: 50px;
     overflow: hidden;
     position: relative;
     color: #000000;
@@ -144,7 +170,8 @@ img {
   height: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  background: linear-gradient(to right, #0e387a 20%, #9FAFCA 100%);
+  /* background: linear-gradient(to right, #DD7000 20%, #D54F49 100%); */
+  background-color: #7892BD;
   transition: width 0.2s ease;
 }
 
@@ -153,7 +180,19 @@ img {
   text-overflow: ellipsis;
   text-align: justify;
   height: 100%;
-  line-height: 1.4;
+  line-height: 1.6;
+  font-size: 13.5px;
+  font-family: 'Lato', sans-serif;
+  /* font-family: 'Work Sans', sans-serif; */
+}
+
+.card_image {
+  max-height: 400px;
+  width: 250px;
+  object-fit: cover;
+  position: static;
+  float: left;
+  padding: 0 15px 0 0;
 }
 
 .tag_box {
@@ -167,15 +206,18 @@ img {
 
 .tag {
   display: inline-block;
-  background: #9FAFCA;
-  color: #0E387A;
+  background: #ececec;
+  color: #415a86;
+  letter-spacing: 1.5px;
+  font-weight: medium;
   border-radius: 3px;
   padding: 2.5px 15px;
   margin: 0 5px 5px 0;
   text-transform: uppercase;
-  cursor: default;
-  user-select: none;
-  transition: background-color 0.3s;
+  /* cursor: default;
+  user-select: none; */
+  /* transition: background-color 0.3s; */
+  font-family: 'Playfair Display', serif;
 }
 
 .columns {
@@ -200,7 +242,6 @@ img {
   color: cornflowerblue;
   font-weight: 300;
 }
-
 
 /* form css --- will change */
 

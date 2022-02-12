@@ -1,22 +1,23 @@
 import React, {useState} from "react";
 
-function SearchBar({searchProp}) {
+function SearchBar({searchFunction}) {
 
     const [searchValue, setSearchValue] = useState('')
 
     return (
-    <div className="search">
-        <h4>Search By Title or Author</h4>
-        <input
-        className="search_bar"
-        type = "text"
-        placeholder="Search..."
-        value={searchValue}
-        onChange={(synthEvent) => {
-            setSearchValue(synthEvent.target.value)
-            searchProp(synthEvent.target.value)
-        }} />
-
+    <div className = "container">
+        <div className="search">
+            <h3>Search By Title or Author</h3>
+            <input
+            className="search_bar"
+            type = "text"
+            placeholder="Search..."
+            value={searchValue}
+            onChange={(synthEvent) => {
+                setSearchValue(synthEvent.target.value)
+                searchFunction(synthEvent.target.value)
+            }} />
+        </div>
     </div>
 
     )

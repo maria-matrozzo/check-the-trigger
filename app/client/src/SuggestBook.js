@@ -1,14 +1,10 @@
 import React, {useState} from "react";
 
-function CreatePost({postBook}) {
+function SuggestBook() {
 
     const [formData, setFormData] = useState({
         title: '',
         author: '',
-        image: '',
-        pages: '',
-        genre: '',
-        description: ''
     })
 
     const handleChange = (e) => {
@@ -17,10 +13,12 @@ function CreatePost({postBook}) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        postBook(formData)
+        // postBook(formData)
     }
     
     return (
+        <div className="container">
+            <h1>Suggest a Book</h1>
         <div class="form-style-6">
             <form onSubmit={handleSubmit}>
                 <label>
@@ -55,9 +53,10 @@ function CreatePost({postBook}) {
 
                 <input type="submit" value="Submit" />
                 </form>
+            </div>
         </div>
 
     )
 }
 
-export default CreatePost;
+export default SuggestBook;
