@@ -7,7 +7,7 @@ function SearchBar({searchFunction}) {
     return (
     <div className = "container">
         <div className="search">
-            <h3>Search By Title or Author</h3>
+            <h3>Search By Title</h3>
             <input
             className="search_bar"
             type = "text"

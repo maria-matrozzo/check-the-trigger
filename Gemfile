@@ -38,3 +38,5 @@ gem "table_print"
 # use g resource
 gem "active_model_serializers", "~> 0.10.12"
 
+# so form submittions send me an email
+gem 'mail_form'

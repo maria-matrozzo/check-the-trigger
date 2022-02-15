@@ -156,7 +156,7 @@ b11 = Book.create(
         image: "https://images-na.ssl-images-amazon.com/images/I/310AgjLFEYL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
         pages: "176 pages",
         genre: "fiction horror young adult",
-        description: "Once upon a time, I was a little girl who disappeared. Once upon a time, my name was not Alice. Once upon a time, I didn t know how lucky I was. When Alice was ten, Ray took her away from her family, her friends her life. She learned to give up all power, to endure all pain. She waited for the nightmare to be over. Now Alice is fifteen and Ray still has her, but he speaks more and more of her death. He does not know it is what she longs for. She does not know he has something more terrifying than death in mind for her. This is Alice;s story. It is one you have never heard, and one you will never, ever forget.",
+        description: "Once upon a time, I was a little girl who disappeared. Once upon a time, my name was not Alice. Once upon a time, I didn t know how lucky I was. When Alice was ten, Ray took her away from her family, her friends her life. She learned to give up all power, to endure all pain. She waited for the nightmare to be over. Now Alice is fifteen and Ray still has her, but he speaks more and more of her death. He does not know it is what she longs for. She does not know he has something more terrifying than death in mind for her. This is Alice's story. It is one you have never heard, and one you will never, ever forget.",
         publication_date: "September 8, 2009",
         publisher: "Simon & Schuster Books for Young Readers")
 

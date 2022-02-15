@@ -5,7 +5,7 @@ function Home() {
 
     return(
         <div>
-            <img src="https://lh3.googleusercontent.com/aGhniU5Wuyj3cIGhMWi7SE5nBdBwfp3vksLU4SSW78DBEvwYsG4moTa7UZv6zfpT9F_qo--99eU_q7hz3_Yo23TCZ8H1EnxX8Jlzwk18xwjen_GDGxIcVzjTKaK2vqU9guplDKxm=w2400" alt="Check the Trigger Image Banner" className="banner"/>
+            <img src="https://lh3.googleusercontent.com/aGhniU5Wuyj3cIGhMWi7SE5nBdBwfp3vksLU4SSW78DBEvwYsG4moTa7UZv6zfpT9F_qo--99eU_q7hz3_Yo23TCZ8H1EnxX8Jlzwk18xwjen_GDGxIcVzjTKaK2vqU9guplDKxm=w2400" alt="Check the Trigger Banner" className="banner"/>
             <hr></hr>
             <div className="container">
                 <h1>What is check the trigger?</h1>
