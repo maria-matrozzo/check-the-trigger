@@ -39,6 +39,24 @@ h4 {
   font-weight: 400;
 }
 
+button {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  background-color: #523129;
+  color: #ececec;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+/* ugh here we go */
+
+
+
 .banner {
   max-width: 100%;
   max-height: 80%;
@@ -277,8 +295,6 @@ content_tabs {
 
 .columns {
   float: left;
-  align-items: center;
-  justify-content: center;
   column-count: 4;
   column-gap: 40px;
   column-rule-width: 1px;

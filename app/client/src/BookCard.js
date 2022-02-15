@@ -26,7 +26,6 @@ import WWarnings from './ContentWarnings/WWarnings';
 import XWarnings from './ContentWarnings/XWarnings';
 
 function BookCard({bookInfo}) {
-
     
     return(
         <div className="container">
@@ -53,158 +52,166 @@ function BookCard({bookInfo}) {
                 
                 <div className="card_bar"></div>
                 
-                    {/* <ReadMoreToggler 
-                    desktopBreakLines={6}
-                    topGradient="#000000"
-                    bottomGradient="#000000" 
-                    buttonColor="#523129"> */}
+                {/* <ReadMoreToggler 
+                desktopBreakLines={5}
+                topGradient="#000000"
+                bottomGradient="#000000" 
+                buttonColor="#523129"> */}
                         
                     <div className="card_p">{bookInfo.description}</div>
 
-                <div className="card_bar"></div>       
+
+                    <div className="card_bar"></div>       
+                            
+                    <h2>Content Warnings</h2>
+                
+                        <ContentWarningSort />
                         
-                <h2>Content Warnings</h2>
+                        <Switch>
+                            <Route path="/books/all">
+                                <AllContentWarnings 
+                                content_warning_all = {bookInfo.content_warnings} />
+                            </Route>
 
-                </div>
+                            <Route path="/books/a">
+                                <AWarnings 
+                                content_warning_a = {bookInfo.content_warnings} />
+                            </Route>
+                            
+                            <Route path="/books/b">
+                                <BWarnings 
+                                content_warning_b = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/c">
+                                <CWarnings 
+                                content_warning_c = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/d">
+                                <DWarnings 
+                                content_warning_d = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/e">
+                                <EWarnings 
+                                content_warning_e = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/f">
+                                <FWarnings 
+                                content_warning_f = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/g">
+                                <GWarnings 
+                                content_warning_g = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/h">
+                                <HWarnings 
+                                content_warning_h = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/i">
+                                <IWarnings 
+                                content_warning_i = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/j">
+                                <NoContentWarning />
+                            </Route>
+
+                            <Route path="/books/k">
+                                <KWarnings 
+                                content_warning_k = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/l">
+                                <LWarnings 
+                                content_warning_l = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/m">
+                                <MWarnings 
+                                content_warning_m = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/n">
+                                <NoContentWarning />
+                            </Route>
+
+                            <Route path="/books/o">
+                                <OWarnings 
+                                content_warning_o = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/p">
+                                <PWarnings 
+                                content_warning_p = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/q">
+                                <NoContentWarning />
+                            </Route>
+
+                            <Route path="/books/r">
+                                <RWarnings 
+                                content_warning_r = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/s">
+                                <SWarnings 
+                                content_warning_s = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/t">
+                                <TWarnings 
+                                content_warning_t = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/u">
+                                <NoContentWarning />
+                            </Route>
+
+                            <Route path="/books/v">
+                                <VWarnings 
+                                content_warning_v = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/w">
+                                <WWarnings 
+                                content_warning_w = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/x">
+                                <XWarnings 
+                                content_warning_x = {bookInfo.content_warnings}/>
+                            </Route>
+
+                            <Route path="/books/y">
+                                <NoContentWarning />
+                            </Route>
+
+                            <Route path="/books/z">
+                                <NoContentWarning />
+                            </Route>
+
+                        </Switch>
+                        {/* <h1 className="white">-</h1>
+                        <h1 className="white">-</h1>
+                        <h1 className="white">-</h1>
+                        <h1 className="white">-</h1>
+                        <h1 className="white">-</h1>
+                        <h1 className="white">-</h1>
+                        <h1 className="white">-</h1> */}
                 
-                <ContentWarningSort />
-
-                
-                <Switch>
-                    <Route path="/books/all">
-                        <AllContentWarnings 
-                        content_warning_all = {bookInfo.content_warnings} />
-                    </Route>
-
-                    <Route path="/books/a">
-                        <AWarnings 
-                        content_warning_a = {bookInfo.content_warnings} />
-                    </Route>
-                    
-                    <Route path="/books/b">
-                        <BWarnings 
-                        content_warning_b = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/c">
-                        <CWarnings 
-                        content_warning_c = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/d">
-                        <DWarnings 
-                        content_warning_d = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/e">
-                        <EWarnings 
-                        content_warning_e = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/f">
-                        <FWarnings 
-                        content_warning_f = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/g">
-                        <GWarnings 
-                        content_warning_g = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/h">
-                        <HWarnings 
-                        content_warning_h = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/i">
-                        <IWarnings 
-                        content_warning_i = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/j">
-                        <NoContentWarning />
-                    </Route>
-
-                    <Route path="/books/k">
-                        <KWarnings 
-                        content_warning_k = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/l">
-                        <LWarnings 
-                        content_warning_l = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/m">
-                        <MWarnings 
-                        content_warning_m = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/n">
-                        <NoContentWarning />
-                    </Route>
-
-                    <Route path="/books/o">
-                        <OWarnings 
-                        content_warning_o = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/p">
-                        <PWarnings 
-                        content_warning_p = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/q">
-                        <NoContentWarning />
-                    </Route>
-
-                    <Route path="/books/r">
-                        <RWarnings 
-                        content_warning_r = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/s">
-                        <SWarnings 
-                        content_warning_s = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/t">
-                        <TWarnings 
-                        content_warning_t = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/u">
-                        <NoContentWarning />
-                    </Route>
-
-                    <Route path="/books/v">
-                        <VWarnings 
-                        content_warning_v = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/w">
-                        <WWarnings 
-                        content_warning_w = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/x">
-                        <XWarnings 
-                        content_warning_x = {bookInfo.content_warnings}/>
-                    </Route>
-
-                    <Route path="/books/y">
-                        <NoContentWarning />
-                    </Route>
-
-                    <Route path="/books/z">
-                        <NoContentWarning />
-                    </Route>
-
-                </Switch>
-
-                    {/* </ReadMoreToggler> */}    
+                {/* </ReadMoreToggler>    */}
+                <h1></h1>
+                    </div> 
             </article>
         </div>
+        
     )
 }
 
