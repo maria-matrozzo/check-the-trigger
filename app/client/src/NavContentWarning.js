@@ -33,6 +33,7 @@ function NavContentWarning() {
           <li className="content_tabs"><Link to="/books/x" className= "content_link">X</Link></li>
           <li className="content_tabs"><Link to="/books/y" className= "content_link">Y</Link></li>
           <li className="content_tabs"><Link to="/books/z" className= "content_link">Z</Link></li>
+          <li className="content_tabs"><Link to="/books/none" className= "content_link">None</Link></li>
         </ul>
       </div>
     )

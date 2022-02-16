@@ -54,9 +54,9 @@ function App() {
             )})}
           </Route>
 
-          <Route path="/suggestbook">
+          {/* <Route path="/suggestbook">
             <SuggestBook />
-          </Route>
+          </Route> */}
 
           <Route path="/">
               <Home />

@@ -1,138 +1,115 @@
 import React, {useState} from "react";
 
-function AllContentWarnings({content_warning_all}) {
+function AllContentWarnings({content_warning_all, showAbandonment, setAbandonment, showAbleism, setAbleism, showAbortion, setAbortion, showAcephobia, setAcephobia, showAddiction, setAddiction, showAdultMinorRelationship, setAdultMinorRelationship, showAlcohol, setAlcohol, showAlcohosim, setAlcohosim, showAnimalCruelty, setAnimalCruelty, showAnimalDeath, setAnimalDeath, showAntisemitism, setAntisemitism, showBiphobia, setBiphobia, showBlood, setBlood, showBodyHorror, setBodyHorror, showBodyShaming, setBodyShaming, showBullying, setBullying, showCancer, setCancer, showCannibalism, setCannibalism, showCarAccident, setCarAccident, showChildAbuse, setChildAbuse, showChildDeath, setChildDeath, showChronicIllness, setChronicIllness, showClassism, setClassism, showColonization, setColonization, showConfinement, setConfinement, showCulturalAppropriation, setCulturalAppropriation, showCursing, setCursing, showDeath, setDeath}) {
 
-const [showAbandoment, setAbandoment] = useState(false)
+
 function revealAbandonment() {
-    setAbandoment(true)
+    setAbandonment(true)
 }
 
-const [showAbleism, setAbleism] = useState(false)
+
 function revealAbleism() {
     setAbleism(true)
 }
 
-const [showAbortion, setAbortion] = useState(false)
+
 function revealAbortion() {
     setAbortion(true)
 }
 
-const [showAcephobia, setAcephobia] = useState(false)
+
 function revealAcephobia() {
     setAcephobia(true)
 }
 
-const [showAddiction, setAddiction] = useState(false)
 function revealAddiction() {
     setAddiction(true)
 }
 
-const [showAdultMinorRelationship, setAdultMinorRelationship] = useState(false)
 function revealAdultMinorRelationship() {
     setAdultMinorRelationship(true)
 }
 
-const [showAlcohol, setAlcohol] = useState(false)
 function revealAlcohol() {
     setAlcohol(true)
 }
 
-const [showAlcohosim, setAlcohosim] = useState(false)
 function revealAlcohosim() {
     setAlcohosim(true)
 }
 
-const [showAnimalCruelty, setAnimalCruelty] = useState(false)
 function revealAnimalCruelty() {
     setAnimalCruelty(true)
 }
 
-const [showAnimalDeath, setAnimalDeath] = useState(false)
 function revealAnimalDeath() {
     setAnimalDeath(true)
 }
 
-const [showAntisemitism, setAntisemitism] = useState(false)
 function revealAntisemitism() {
     setAntisemitism(true)
 }
 
-const [showBiphobia, setBiphobia] = useState(false)
 function revealBiphobia() {
     setBiphobia(true)
 }
 
-const [showBlood, setBlood] = useState(false)
 function revealBlood() {
     setBlood(true)
 }
 
-const [showBodyHorror, setBodyHorror] = useState(false)
 function revealBodyHorror() {
     setBodyHorror(true)
 }
 
-const [showBodyShaming, setBodyShaming] = useState(false)
 function revealBodyShaming() {
     setBodyShaming(true)
 }
 
-const [showBullying, setBullying] = useState(false)
 function revealBullying() {
     setBullying(true)
 }
 
-const [showCancer, setCancer] = useState(false)
 function revealCancer() {
     setCancer(true)
 }
 
-const [showCannibalism, setCannibalism] = useState(false)
 function revealCannibalism() {
     setCannibalism(true)
 }
 
-const [showCarAccident, setCarAccident] = useState(false)
 function revealCarAccident() {
     setCarAccident(true)
 }
 
-const [showChildAbuse, setChildAbuse] = useState(false)
 function revealChildAbuse() {
     setChildAbuse(true)
 }
 
-const [showChildDeath, setChildDeath] = useState(false)
 function revealChildDeath() {
     setChildDeath(true)
 }
 
-const [showChronicIllness, setChronicIllness] = useState(false)
 function revealChronicIllness() {
     setChronicIllness(true)
 }
 
-const [showClassism, setClassism] = useState(false)
 function revealClassism() {
     setClassism(true)
 }
 
-const [showColonization, setColonization] = useState(false)
 function revealColonization() {
     setColonization(true)
 }
 
-const [showConfinement, setConfinement] = useState(false)
 function revealConfinement() {
     setConfinement(true)
 }
 
-const [showCulturalAppropriation, setCulturalAppropriation] = useState(false)
 function revealCulturalAppropriation() {
     setCulturalAppropriation(true)
 }
 
-const [showCursing, setCursing] = useState(false)
 function revealCursing() {
     setCursing(true)
 }
@@ -142,7 +119,6 @@ function revealDeadnaming() {
     setDeadnaming(true)
 }
 
-const [showDeath, setDeath] = useState(false)
 function revealDeath() {
     setDeath(true)
 }
@@ -474,7 +450,7 @@ function revealXenophobia() {
 
 return(
     <div className="columns">
-        <p onClick={revealAbandonment}><b>Abandonment:</b>  {showAbandoment ? content_warning_all.abandonment : "Click Here"}</p>
+        <p onClick={revealAbandonment}><b>Abandonment:</b>  {showAbandonment ? content_warning_all.abandonment : "Click Here"}</p>
         <p onClick={revealAbleism}><b>Ableism:</b>  {showAbleism ? content_warning_all.ableism : "Click Here"}</p>
         <p onClick={revealAbortion}><b>Abortion:</b>  {showAbortion ? content_warning_all.abortion : "Click Here"}</p>
         <p onClick={revealAcephobia}><b>Acephobia:</b>  {showAcephobia ? content_warning_all.acephobia : "Click Here"}</p>
