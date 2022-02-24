@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 import BookCard from './BookCard';
 import SearchBar from './SearchBar';
 import Footer from './Footer';
-import SuggestBook from './SuggestBook';
+// import SuggestBook from './SuggestBook';
 import Home from './Home';
 
 function App() {

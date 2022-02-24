@@ -92,9 +92,9 @@ function BookCard({bookInfo}) {
                         <div className="card_bar"></div>   
                     </ReadMoreToggler>
                         
-                   
+                </div>
                     <h2>Content Warnings</h2>  
-                </div>          
+                          
                 
                     <ContentWarningSort />
                     <Switch>

@@ -160,16 +160,6 @@ b11 = Book.create(
         publication_date: "September 8, 2009",
         publisher: "Simon & Schuster Books for Young Readers")
 
-b12 = Book.create(
-    title: "If We Were Villains",
-    author_id: a8.id,
-    image: "https://m.media-amazon.com/images/I/411eJEeZdOL._SY346_.jpg",
-    pages: "370 pages",
-    genre: "fiction contemporary lgbtqia+ mystery",
-    description: "On the day Oliver Marks is released from jail, the man who put him there is waiting at the door. Detective Colborne wants to know the truth, and after ten years, Oliver is finally ready to tell it.\nA decade ago: Oliver is one of seven young Shakespearean actors at Dellecher Classical Conservatory, a place of keen ambition and fierce competition. In this secluded world of firelight and leather-bound books, Oliver and his friends play the same roles onstage and off: hero, villain, tyrant, temptress, ingénue, extras.\nBut in their fourth and final year, good-natured rivalries turn ugly, and on opening night real violence invades the students’ world of make-believe. In the morning, the fourth-years find themselves facing their very own tragedy, and their greatest acting challenge yet: convincing the police, each other, and themselves that they are innocent.",
-    publication_date: "April 11, 2017",
-    publisher: "Flatiron Books")
-
 b13 = Book.create(
     title: "Twilight",
     author_id: a6.id,
@@ -180,6 +170,15 @@ b13 = Book.create(
     publication_date: "July 18, 2007",
     publisher: "Little, Brown Books for Young Readers")
 
+b12 = Book.create(
+    title: "If We Were Villains",
+    author_id: a8.id,
+    image: "https://m.media-amazon.com/images/I/411eJEeZdOL._SY346_.jpg",
+    pages: "370 pages",
+    genre: "fiction contemporary lgbtqia+ mystery",
+    description: "On the day Oliver Marks is released from jail, the man who put him there is waiting at the door. Detective Colborne wants to know the truth, and after ten years, Oliver is finally ready to tell it.\nA decade ago: Oliver is one of seven young Shakespearean actors at Dellecher Classical Conservatory, a place of keen ambition and fierce competition. In this secluded world of firelight and leather-bound books, Oliver and his friends play the same roles onstage and off: hero, villain, tyrant, temptress, ingénue, extras.\nBut in their fourth and final year, good-natured rivalries turn ugly, and on opening night real violence invades the students’ world of make-believe. In the morning, the fourth-years find themselves facing their very own tragedy, and their greatest acting challenge yet: convincing the police, each other, and themselves that they are innocent.",
+    publication_date: "April 11, 2017",
+    publisher: "Flatiron Books")
 
 
 puts "seeding content warnings..."
